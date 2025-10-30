@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    </head>
+    <body>
+        <py-script>
+                pin = "1234"
+                attempts = 3
+
+                while attempts > 0:
+                    passw = input("Enter the ATM PIN: ")
+                    if passw == pin :
+                        print("Access Granted ")
+                        break
+                    else:
+                    attempts -= 1
+                    print(f"Incorrect PIN . you have(attempts) attempts left")
+
+                if attempts == 0:
+                    print("Account Locked ")
+        </py-script>
+    </body>
+</html>
